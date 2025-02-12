@@ -17,32 +17,32 @@ public class Mavenproject1 {
         int opt = sc1.nextInt();
         
         System.out.flush();
-        
+           
         switch(opt) {
             case 0:
                 System.exit(0);
                break;
             case 1: 
-                Calculadora.soma(0, 0);
+                Calculadora.soma(Calculadora.Capture2input());
                 break;
             case 2: 
-                Calculadora.subtracao(0, 0);
+                Calculadora.subtracao(Calculadora.Capture2input());
                 break;
             case 3: 
-                Calculadora.multiplicacao(0, 0);
+                Calculadora.multiplicacao(Calculadora.Capture2input());
                 break;
             case 4: 
-                Calculadora.divisao(0, 0);
+                Calculadora.divisao(Calculadora.Capture2input());
                 break;
             default:
                 menuPrint();
                 break;
         }
+        menuPrint();
     }
     
     
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {       
         menuPrint();
     }
 }
